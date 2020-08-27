@@ -1,0 +1,20 @@
+@import './base/normalize';
+@import './base/variables';
+@import './base/global';
+@import './base/mixins';
+
+// layout
+
+@import './layout/header';
+@import './layout/gen';
+@import './layout/footer';
+
+// animations
+@import './animations/incoming';
+@import './animations/moving';
+@import './animations/sizing';
+@import './animations/state';
+
+// animated components
+@import './components/graphs';
+@import './components/shapes';

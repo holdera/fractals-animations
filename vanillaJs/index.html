@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/assets/styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="logo"><span>Animations</span></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="wrapper">
+            <div class="multiple-charts__stats">
+                <div class="pie-chart__content center-align-all">
+                    <svg class="progress-ring animate" width="140" height="140">
+                        <circle class="progress-ring__full_circle" stroke="black" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                        <circle class="progress-ring__circle stats-circle-four animate" stroke="black" data-percent="30" data-color="#D4023A" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                    </svg>
+                    <div class="chart-callouts">
+                        <span class="callouts center">Callout text</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="multiple-charts__stats">
+                <div class="pie-chart__content center-align-all">
+                    <svg class="progress-ring animate" width="140" height="140">
+                        <circle class="progress-ring__full_circle" stroke="black" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                        <circle class="progress-ring__circle stats-circle-four animate" stroke="black" data-percent="70" data-color="#EB45C3" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                    </svg>
+                    <div class="chart-callouts">
+                        <span class="callouts center">Callout text</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="multiple-charts__stats">
+                <div class="pie-chart__content center-align-all">
+                    <svg class="progress-ring animate" width="140" height="140">
+                        <circle class="progress-ring__full_circle" stroke="black" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                        <circle class="progress-ring__circle stats-circle-four animate" stroke="black" data-percent="90" data-color="#F66659" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                    </svg>
+                    <div class="chart-callouts">
+                        <span class="callouts center">Callout text</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="multiple-charts__stats">
+                <div class="pie-chart__content center-align-all">
+                    <svg class="progress-ring animate" width="140" height="140">
+                        <circle class="progress-ring__full_circle" stroke="black" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                        <circle class="progress-ring__circle stats-circle-four animate" stroke="black" data-percent="50" data-color="#6C59F6" stroke-width="4" fill="transparent" r="52" cx="70" cy="70"/>
+                    </svg>
+                    <div class="chart-callouts">
+                        <span class="callouts center">Callout text</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="wrapper">
+            <div class="progress-bar">
+                <div class="progress">
+                    <span class="progress-status" delay data-transition="3" data-percentage="70"></span>
+                    <span class="progress-text">70%</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="graphs-bar">
+                <div class="bars">
+                    <span class="bar" data-transition="3" data-percentage="170"></span>
+                    <span class="bar" data-transition="3" data-percentage="70"></span>
+                    <span class="bar" data-transition="3" data-percentage="230"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- animating certain elements -->
+
+        <section class="wrapper shapes">
+            <div class="squares">
+                <div class="square" repeat="false"  data-animation="twirl" data-sequence="1"></div>
+                <div class="square" repeat="false" data-animation="pulsing" data-sequence="2"></div>
+                <div class="square" repeat="false" data-animation="spins" data-sequence="2"></div>
+                <div class="square" repeat="false" data-animation="zoom" data-sequence="2"></div>
+            </div>
+        </section>
+
+        <section class="wrapper shapes">
+            <div class="circles">
+                <div class="circle" repeat="false"  data-animation="blurToFocus" data-sequence="1"></div>
+                <div class="circle" repeat="false" data-animation="pulsing" data-sequence="2"></div>
+                <div class="circle" repeat="false" data-animation="spins" data-sequence="2"></div>
+                <div class="circle" repeat="false" data-animation="zoom" data-sequence="2"></div>
+            </div>
+        </section>
+
+    </main>
+
+<script type="module" src="./src/index.js"></script>
+</body>
+</html>

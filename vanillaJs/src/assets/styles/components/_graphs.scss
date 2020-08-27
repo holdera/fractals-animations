@@ -1,0 +1,114 @@
+.multiple-charts{
+    &__stats {
+        width: 49%;
+        font-size: 0;
+        display: inline-block;
+        margin-bottom: 19px;
+        vertical-align: top;
+        text-align: center;
+        &:nth-child(even){
+            margin-right: 1%;
+        }
+        @include atMedium{
+            text-align: left;
+        }
+        @include atDesktop {
+            text-align: left;
+            margin-left: -10px;
+        }
+    }
+}
+.single-charts__stats {
+    width: 100%;
+    max-width: 300px;
+    margin: 24px auto 0;
+    display: block;
+    svg.progress-ring {
+        transform: scale(0.91, 0.93);
+    }
+    .pie-chart__content span.callouts {
+     left: 137px;
+    }
+    &.esrd {
+        span.pinker.bigger.font-thirty {
+            display: block;
+        }
+    }
+}
+.chart-callouts {
+    font-size: 1.6rem;
+}
+
+.progress-ring {
+    &__circle, &__full_circle {
+        stroke: #C7CAC9;
+        stroke-width: 13px;
+        stroke-dasharray: 100 0;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+        stroke-dashoffset: 0;
+    }
+    &__full_circle {
+        stroke: #C7CAC9;;
+    }
+    &__circle {
+        stroke-dasharray: 186, 326;
+        stroke-dashoffset: 326;
+        transition: 3s stroke-dashoffset;
+    }
+}
+
+// progress bars
+.progress {
+    padding: 20px 0;
+    background: $navy;
+    width: 1%;
+    &-bar {
+        display: block;
+        position: relative;
+        background: #ccc;
+    }
+    
+    &-text{
+        position: absolute;
+        right: 20px;
+        color: $navy;
+        @include verticalCenter;
+    }
+}
+
+// graphs
+.graphs-bar{
+    display: block;
+    height: 300px;
+    position: relative;
+    background: #f2f2f2;
+    .bars {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        @include atMedium{
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+    }
+    .bar {
+        background: blueviolet;
+        width: 60px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        margin-right: 20px;
+        left: 100px;
+        &:nth-child(2){ 
+            background: palevioletred;
+            left: 200px;
+        }
+        &:nth-child(3){ 
+            background: green;
+            left: 300px;
+        }
+    }
+}

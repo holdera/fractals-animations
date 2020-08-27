@@ -1,0 +1,9 @@
+.wrapper {
+    width: 100%;
+    max-width: 1178px;
+    margin: 30px auto;
+    position: relative;
+    &.shapes {
+        margin: 90px 0;
+    }
+}

@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font;
+    font-size: 1.6rem;
+    color: $main-color;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+    display: block;
+}

@@ -1,0 +1,13 @@
+._*
+.AppleDouble/
+.DS_Store
+.git
+.sass-cache/
+node_modules/
+.serverless/
+env.txt
+.vscode/
+webpack.dev.js
+webpack.prod.js
+webpack.common.js
+webpack.production.js
